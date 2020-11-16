@@ -23,8 +23,8 @@ makeCacheMatrix <- function(x = matrix()) {  # Also initializes empty matrix "x"
   ## "setmatrix" can be used to replace the matrix in its containing object and
   ## reset the value of "inverse".
   setmatrix <- function(y) {
-    x <- y
-    inverse <- NULL
+    x <<- y
+    inverse <<- NULL
   }
   
   ## "getmatrix" fetches the contents of the original matrix "x".
